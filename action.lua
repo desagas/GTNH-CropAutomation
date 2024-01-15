@@ -34,6 +34,7 @@ end
 
 local function charge()
     gps.go(config.chargerPos)
+    gps.turnTo(1)
     repeat
         os.sleep(0.5)
     until fullyCharged()
